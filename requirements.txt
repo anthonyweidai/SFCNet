@@ -1,0 +1,29 @@
+# data processing
+numpy
+pandas
+labelme
+openpyxl
+# image
+imgviz
+Pillow
+imageio
+seaborn
+IPython
+matplotlib
+scikit-learn
+
+# torch module
+yacs # configs
+apex # detr
+einops
+pycocotools
+torch-summary
+
+# printing
+tqdm
+thop
+
+# unknown
+six
+onnx
+visdom
