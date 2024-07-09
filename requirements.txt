@@ -1,0 +1,35 @@
+# data processing
+numpy
+pandas
+labelme
+openpyxl
+xlsxwriter # for getValFromSeparateFiles
+
+# image
+imgviz
+Pillow
+imageio
+seaborn
+IPython
+matplotlib
+scikit-learn
+
+imgaug # augmentation
+opencv-contrib-python # saliency
+
+# system
+six # smoothing codes over Python versions
+onnx # hardware optimisation
+
+# torch module
+timm # pytorch image model library
+yacs # configs
+apex # detr
+einops
+pycocotools
+torch-summary
+
+# printing
+tqdm
+thop
+visdom # for visualisation
