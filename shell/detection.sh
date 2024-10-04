@@ -1,0 +1,8 @@
+CUDA_VISIBLE_DEVICES=0 python trainDet.py --config-file lib/detection/configs/soseg/msa.yaml --num-gpus 1 MODEL.WEIGHTS ./savemodel/spermseg/pkl/common_resnet50_aspcp_e100bs4_Exp1.pkl OUTPUT_DIR ./exp/detection/exp1
+CUDA_VISIBLE_DEVICES=0 python trainDet.py --config-file lib/detection/configs/soseg/msa.yaml --num-gpus 1 MODEL.WEIGHTS ./savemodel/spermseg/pkl/common_resnet50_aspcp_e100bs4_Exp2.pkl OUTPUT_DIR ./exp/detection/exp2
+CUDA_VISIBLE_DEVICES=0 python trainDet.py --config-file lib/detection/configs/soseg/msa.yaml --num-gpus 1 MODEL.WEIGHTS ./savemodel/spermseg/pkl/common_resnet50_aspcp_e100bs4_Exp3.pkl OUTPUT_DIR ./exp/detection/exp3
+CUDA_VISIBLE_DEVICES=0 python trainDet.py --config-file lib/detection/configs/soseg/msa.yaml --num-gpus 1 MODEL.WEIGHTS ./savemodel/spermseg/pkl/common_resnet50_aspcp_e100bs4_Exp4.pkl OUTPUT_DIR ./exp/detection/exp4
+CUDA_VISIBLE_DEVICES=0 python trainDet.py --config-file lib/detection/configs/soseg/msa.yaml --num-gpus 1 MODEL.WEIGHTS ./savemodel/spermseg/pkl/common_resnet50_aspcp_e100bs4_Exp6.pkl OUTPUT_DIR ./exp/detection/exp6
+CUDA_VISIBLE_DEVICES=0 python trainDet.py --config-file lib/detection/configs/soseg/msa.yaml --num-gpus 1 MODEL.WEIGHTS ./savemodel/spermseg/pkl/common_resnet50_aspcp_e100bs4_Exp7.pkl OUTPUT_DIR ./exp/detection/exp7
+CUDA_VISIBLE_DEVICES=0 python trainDet.py --config-file lib/detection/configs/soseg/msa.yaml --num-gpus 1 MODEL.WEIGHTS ./savemodel/spermseg/pkl/common_resnet50_aspcp_e100bs4_Exp8.pkl OUTPUT_DIR ./exp/detection/exp8
+CUDA_VISIBLE_DEVICES=0 python trainDet.py --config-file lib/detection/configs/soseg/msa.yaml --num-gpus 1 MODEL.WEIGHTS ./savemodel/spermseg/pkl/common_resnet50_aspcp_e100bs4_Exp9.pkl OUTPUT_DIR ./exp/detection/exp9

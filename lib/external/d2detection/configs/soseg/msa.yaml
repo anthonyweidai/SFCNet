@@ -1,0 +1,33 @@
+_BASE_: "../base_rcnn_msa.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  PIXEL_MEAN: [177.843, 180.497, 179.508]
+  PIXEL_STD: [5.286, 5.215, 5.223]
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 50
+    STRIDE_IN_1X1: False
+  ROI_HEADS:
+    NUM_CLASSES: 1
+  # RPN: use default settings
+INPUT:
+  FORMAT: "RGB"
+  MIN_SIZE_TRAIN: (480, 512, 544, 576, 608, 640, 672, 704, 736, 768, 800)
+  MIN_SIZE_TEST: 800
+DATASETS:
+  TRAIN: ('spermtrack_2023_train',)
+  TEST: ('spermtrack_2023_test',)
+SOLVER:
+  BASE_LR: 0.02 # 0.01, 0.05 get lower performance
+  IMS_PER_BATCH: 16
+  MAX_ITER: 1000 # 68.4 epoches
+  WARMUP_ITERS: 20
+  STEPS: (400, 600, 800)
+  # # in test
+  # STEPS: (150, 250)
+  # MAX_ITER: 500 # 34.2 epoches
+  # WARMUP_ITERS: 10
+  # # in full
+  # STEPS: (600, 800)
+  # MAX_ITER: 1000 # 68.4 epoches
+  # WARMUP_ITERS: 20

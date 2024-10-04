@@ -1,0 +1,41 @@
+# data
+*.csv
+*.xlsx
+*.zip
+*.txt
+*.pth
+*.pkl
+
+# File
+test.py
+test2.py
+test3.py
+temp.py
+
+# Folder
+exp
+clound
+Backup
+runs
+output
+dataset
+savemodel
+savemodel_ref
+.vscode
+__pycache__
+resultPlot/data
+shell/erst
+
+# Keep
+!requirements.txt
+
+!tools/dataset
+!tools/result/sperm/data/*.csv
+!tools/manual_label/format/*.txt
+!tools/diffusion/requirements.txt
+
+!lib/plot/data/*/*
+!lib/plot/data/*/*/*
+
+!lib/data/dataset
+!lib/data/process/preprocess/ade20k_instance_catid_mapping.txt
